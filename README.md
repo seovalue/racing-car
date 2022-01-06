@@ -1,5 +1,7 @@
-# java-racingcar
-자동차 경주 게임 미션 저장소
+# kotlin-racingcar
+자동차 경주 게임을 코틀린으로 구현해보자. <br>
+해당 레포지토리를 참고하였습니다. <br>
+* cf: [아마찌 레포지토리](https://github.com/newWisdom/kotlin-racingcar-1)
 
 ## 구현해야 하는 기능 목록
 
