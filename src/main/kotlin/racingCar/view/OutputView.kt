@@ -9,13 +9,13 @@ fun printResults(racingResult: Pair<List<Cars>, List<Car>>) {
         printResult(cars)
     }
 
-    val winnerNames = racingResult.second.map { it.name }
+    val winnerNames = racingResult.second.map { it.name() }
     println("${winnerNames.joinToString(",")}가 최종 우승했습니다.")
 }
 
 fun printResult(cars: Cars) {
     cars.forEach {
-        println("${it.name} : ${"-".repeat(it.position)}")
+        println("${it.name()} : ${"-".repeat(it.position)}")
     }
     println()
 }

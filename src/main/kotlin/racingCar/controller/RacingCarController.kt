@@ -2,6 +2,7 @@ package racingCar.controller
 
 import racingCar.RacingCarGame
 import racingCar.model.Car
+import racingCar.model.CarName
 import racingCar.model.Cars
 import racingCar.model.RandomMoveStrategy
 import racingCar.view.inputCarNames
@@ -18,6 +19,6 @@ class RacingCarController {
     }
 
     private fun createCars(carNames: List<String>): Cars {
-        return Cars(carNames.map { Car(it) })
+        return Cars(carNames.map { Car(CarName(it)) })
     }
 }

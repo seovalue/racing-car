@@ -1,6 +1,6 @@
 package racingCar.model
 
-import racingCar.generateRandomNumber
+import racingCar.util.generateRandomNumber
 
 class RandomMoveStrategy: MoveStrategy {
     override fun canMove(): Boolean {

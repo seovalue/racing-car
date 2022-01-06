@@ -9,8 +9,8 @@ class RacingCarGame (private var cars: Cars, private val tryNumber: Int){
     fun race(moveStrategy: MoveStrategy): Pair<List<Cars>, List<Car>> {
         val carsGroup = mutableListOf<Cars>()
         repeat(tryNumber) {
-            val cars = cars.moveAll(moveStrategy)
-            carsGroup.add(cars)
+            cars = cars.moveAll(moveStrategy)
+            carsGroup.add(this.cars)
         }
 
         return carsGroup to findWinners()
